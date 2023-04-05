@@ -5,14 +5,40 @@ def parse(filePath, fileObj):
     mycsv = open(filePath, "r")
     print("PATH:", filePath)
 
+    counter = 0
     while True:
         line = mycsv.readline().strip()
         if line == '':
             print("break")
             break
-        newLine = line.replace(" ", ",").replace("┊","│").replace("│", ";").replace(",,,", ",").replace(",,", "").replace("│,", "|").replace(";,", ",").replace(",;", ";").replace(",,", ",")
-        print(newLine)
-        fileObj.write(newLine)
+
+        if counter == 0:
+            newLine = line.replace(" ", ",").replace("┬", ",").replace(";", ",")
+            newLine = newLine + "\n"
+            print(newLine, end=" ")
+            fileObj.write(newLine)
+            counter += 1
+            continue
+            
+        
+        if counter == 1:
+            newLine = line.replace(" ", ",").replace("│", ",").replace(",,,", ",").replace(",,",",").replace(",,",",")
+            newLine = newLine + "\n"
+            print(newLine, end=" ")
+            fileObj.write(newLine)
+            counter += 1
+            continue
+            
+        
+        if counter > 1:
+            newLine = line.replace(" ", ",").replace("┊",",").replace("│", ",").replace(",,,", ",").replace(",,", ",").replace("│,", ",").replace(",;", ",").replace(",,", ",")
+            newLine = newLine + "\n"
+            print(newLine, end=" ")
+            fileObj.write(newLine)
+            counter += 1
+            continue
+            
+    counter = 0
 
 
 

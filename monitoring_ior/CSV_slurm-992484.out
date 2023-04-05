@@ -26,10 +26,10 @@ main,tool,program,PID:,124721
 MY,MAIN_PID:,124721
 MY,PID_LIST:,124613,124614,124617,124618,124620
 IOR-3.3.0:,MPI,Coordinated,Test,of,Parallel,I/O
-Began,:,Wed,Apr5,16:36:01,2023
-Command,line:,ior,-a,MPIIO,-t,1000M,-b,1000M,-C,-F,-e
-Machine,:,Linux,node25-008.cm.cluster
-TestID:,0
-StartTime,:,Wed,Apr5,16:36:01,2023
-Path:,/home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
-FS:,36.2,TiB,Used,FS:,10.7%,Inodes:,581.9,Mi,Used,Inodes:,7.3%
+Began,,:,Wed,Apr,5,16:36:01,2023
+Command,line,:,ior,-a,MPIIO,-t,1000M,-b,1000M,-C,-F,-e
+Machine,,:,Linux,node25-008.cm.cluster
+TestID,,:,0
+StartTime,,:,Wed,Apr,5,16:36:01,2023
+Path,,:,/home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
+FS,,:,36.2,TiB,Used,FS:,10.7%,Inodes:,581.9,Mi,Used,Inodes:,7.3%
