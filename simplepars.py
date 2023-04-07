@@ -1,5 +1,6 @@
 import sys
 import os
+import replacer
 
 def parse(filePath, fileObj):
     mycsv = open(filePath, "r")
@@ -32,15 +33,13 @@ def parse(filePath, fileObj):
         
         if counter > 1:
             newLine = line.replace(" ", ",").replace("┊",",").replace("│", ",").replace(",,,", ",").replace(",,", ",").replace("│,", ",").replace(",;", ",").replace(",,", ",")
-            newLine = newLine + "\n"
+            newLine = replacer.monitoringLineConvert(newLine) + "\n"
             print(newLine, end=" ")
             fileObj.write(newLine)
             counter += 1
             continue
             
     counter = 0
-
-
 
 
 directory = sys.argv[1]

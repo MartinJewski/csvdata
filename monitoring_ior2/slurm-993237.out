@@ -1,0 +1,46 @@
+---------------------------------
+srun: Warning: can't run 4 processes on 5 nodes, setting nnodes to 4
+---------------------------------
+Node_LIST: node24-012 node25-004 node25-005 node25-015 node25-018
+-------------------iter:0------------------------
+monitoring start 0 PID: 116421
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node25-004
+monitoring start 1 PID: 116423
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node25-005
+monitoring start 2 PID: 116425
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node25-015
+monitoring start 3 PID: 116427
+--------------------------------------------------
+-------------------iter:4------------------------
+distribute from: node25-018
+monitoring start 4 PID: 116428
+--------------------------------------------------
+distribute from: node24-012
+main tool program PID: 116527
+MY MAIN_PID: 116527
+MY PID_LIST: 116421 116423 116425 116427 116428
+--------------------------------------------------------------------------
+There are not enough slots available in the system to satisfy the 100 slots
+that were requested by the application:
+  ior
+
+Either request fewer slots for your application, or make more slots available
+for use.
+--------------------------------------------------------------------------
+TERMINATE METRIC JOB - PID: 116421
+./jobdistributor.sh: line 123: kill: (116421) - No such process
+TERMINATE METRIC JOB - PID: 116423
+./jobdistributor.sh: line 132: 116423 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 116425
+./jobdistributor.sh: line 132: 116425 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 116427
+./jobdistributor.sh: line 132: 116427 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 116428
+./jobdistributor.sh: line 132: 116428 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
