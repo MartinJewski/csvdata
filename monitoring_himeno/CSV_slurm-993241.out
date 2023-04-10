@@ -30,9 +30,9 @@ monitoring,start,6,PID:,119089
 --------------------------------------------------
 distribute,from:,node24-012
 main,tool,program,PID:,119209
-MY,MAIN_PID:,119209
-MY,PID_LIST:,119078,119079,119082,119084,119085,119087,119089
+0,0,119209
+0,PID_LIST:,119078,119079,119082,119084,119085,119087,119089
 Start,rehearsal,measurement,process.
-Measure,the,performance,in,3,times.
+0,the,performance,in,3,times.
 World,grid,dimensions,are:,28x28x54
-Gird,dimension,per,process:,7x7x12
+0,dimension,per,process:,7x7x12
