@@ -1,0 +1,63 @@
+---------------------------------
+---------------------------------
+Node_LIST: node27-002 node27-003
+-------------------iter:0------------------------
+monitoring start 0 PID: 69986
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-003
+monitoring start 1 PID: 69987
+--------------------------------------------------
+distribute from: node27-002
+main tool program PID: 70058
+MY MAIN_PID: 70058
+MY PID_LIST: 69986 69987
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Wed Apr 12 15:25:23 2023
+Command line        : ior -a MPIIO -t 100M -b 1000M -C
+Machine             : Linux node27-002.cm.cluster
+TestID              : 0
+StartTime           : Wed Apr 12 15:25:23 2023
+Path                : /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
+FS                  : 36.2 TiB   Used FS: 10.7%   Inodes: 581.9 Mi   Used Inodes: 7.3%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : testFile
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 2
+tasks               : 30
+clients per node    : 15
+repetitions         : 1
+xfersize            : 100 MiB
+blocksize           : 1000 MiB
+aggregate filesize  : 29.30 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+write     76.74      0.767401   35.64       1024000    102400     0.021003   390.93     362.01     390.95     0   
+read      182.70     1.83       16.41       1024000    102400     0.121070   164.09     1.31       164.21     0   
+remove    -          -          -           -          -          -          -          -          5.96       0   
+Max Write: 76.74 MiB/sec (80.46 MB/sec)
+Max Read:  182.70 MiB/sec (191.57 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write          76.74      76.74      76.74       0.00       0.77       0.77       0.77       0.00  390.95270         NA            NA     0     30  15    1   0     1        1         0    0      1 1048576000 104857600   30000.0 MPIIO      0
+read          182.70     182.70     182.70       0.00       1.83       1.83       1.83       0.00  164.20764         NA            NA     0     30  15    1   0     1        1         0    0      1 1048576000 104857600   30000.0 MPIIO      0
+Finished            : Wed Apr 12 15:34:44 2023
+TERMINATE METRIC JOB - PID: 69986
+./jobdistributor.sh: line 123: kill: (69986) - No such process
+TERMINATE METRIC JOB - PID: 69987
+./jobdistributor.sh: line 132: 69987 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
