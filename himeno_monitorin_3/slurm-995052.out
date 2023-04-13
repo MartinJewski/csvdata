@@ -1,0 +1,128 @@
+---------------------------------
+---------------------------------
+Node_LIST: node29-001 node29-002 node29-003 node29-016
+-------------------iter:0------------------------
+monitoring start 0 PID: 113972
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node29-002
+monitoring start 1 PID: 113973
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node29-003
+monitoring start 2 PID: 113975
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node29-016
+monitoring start 3 PID: 113978
+--------------------------------------------------
+distribute from: node29-001
+main tool program PID: 114066
+MY MAIN_PID: 114066
+MY PID_LIST: 113972 113973 113975 113978
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+World grid dimensions are: 253x253x203
+Gird dimension per process: 65x65x52
+
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Running on 25 OpenMP threads
+Floating Point Operations: 4.30549e+08
+MFLOPS: 7061.18 time(s): 0.182922 gosa: 0.000342475
+
+Now start the actual measurement process.
+The loop will be executed 984 times.
+This will take about 60 seconds.
+Wait for a while 
+
+cpu: 13.4424 sec.
+Loop executed for 984 times
+Gosa: 9.14644e-05
+MFLOPS measured: 31516.7
+TERMINATE METRIC JOB - PID: 113972
+./jobdistributor.sh: line 123: kill: (113972) - No such process
+TERMINATE METRIC JOB - PID: 113973
+./jobdistributor.sh: line 132: 113973 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 113975
+./jobdistributor.sh: line 132: 113975 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 113978
+./jobdistributor.sh: line 132: 113978 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
