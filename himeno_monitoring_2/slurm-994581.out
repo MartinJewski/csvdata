@@ -1,0 +1,41 @@
+---------------------------------
+---------------------------------
+Node_LIST: node29-001 node29-002 node29-003 node29-016
+-------------------iter:0------------------------
+monitoring start 0 PID: 53125
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node29-002
+monitoring start 1 PID: 53126
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node29-003
+monitoring start 2 PID: 53129
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node29-016
+monitoring start 3 PID: 53131
+--------------------------------------------------
+distribute from: node29-001
+main tool program PID: 53222
+MY MAIN_PID: 53222
+MY PID_LIST: 53125 53126 53129 53131
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: /home/fuch0s/aglippert/machajewskim/cpp-himeno/cpp-himeno-benchmark/build/benchmark/himeno-benchmark
+Node: node29-001
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+80 total processes failed to start
+TERMINATE METRIC JOB - PID: 53125
+./jobdistributor.sh: line 123: kill: (53125) - No such process
+TERMINATE METRIC JOB - PID: 53126
+./jobdistributor.sh: line 132: 53126 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 53129
+./jobdistributor.sh: line 132: 53129 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 53131
+./jobdistributor.sh: line 132: 53131 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
