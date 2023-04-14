@@ -1,0 +1,78 @@
+---------------------------------
+---------------------------------
+Node_LIST: node24-014 node24-015 node24-017 node24-018
+-------------------iter:0------------------------
+monitoring start 0 PID: 119443
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node24-015
+monitoring start 1 PID: 119444
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node24-017
+monitoring start 2 PID: 119446
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node24-018
+monitoring start 3 PID: 119448
+--------------------------------------------------
+distribute from: node24-014
+main tool program PID: 119539
+MY MAIN_PID: 119539
+MY PID_LIST: 119443 119444 119446 119448
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Fri Apr 14 05:42:41 2023
+Command line        : ior -a MPIIO -t 500M -b 1000M -F
+Machine             : Linux node24-014.cm.cluster
+TestID              : 0
+StartTime           : Fri Apr 14 05:42:41 2023
+Path                : /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
+FS                  : 36.2 TiB   Used FS: 10.7%   Inodes: 581.9 Mi   Used Inodes: 7.3%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : testFile
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 4
+tasks               : 80
+clients per node    : 20
+repetitions         : 1
+xfersize            : 500 MiB
+blocksize           : 1000 MiB
+aggregate filesize  : 78.12 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 83886080000.
+WARNING: Stat() of aggregate file size      = 27217530880.
+WARNING: Using actual aggregate bytes moved = 83886080000.
+write     447.06     0.894185   88.91       1024000    512000     0.025752   178.93     14.26      178.95     0   
+WARNING: Expected aggregate file size       = 83886080000.
+WARNING: Stat() of aggregate file size      = 27217530880.
+WARNING: Using actual aggregate bytes moved = 83886080000.
+read      1355.90    2.71       29.26       1024000    512000     0.040227   58.98      0.720227   59.00      0   
+remove    -          -          -           -          -          -          -          -          4.80       0   
+Max Write: 447.06 MiB/sec (468.77 MB/sec)
+Max Read:  1355.90 MiB/sec (1421.76 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         447.06     447.06     447.06       0.00       0.89       0.89       0.89       0.00  178.94865         NA            NA     0     80  20    1   1     0        1         0    0      1 1048576000 524288000   80000.0 MPIIO      0
+read         1355.90    1355.90    1355.90       0.00       2.71       2.71       2.71       0.00   59.00154         NA            NA     0     80  20    1   1     0        1         0    0      1 1048576000 524288000   80000.0 MPIIO      0
+Finished            : Fri Apr 14 05:46:44 2023
+TERMINATE METRIC JOB - PID: 119443
+./jobdistributor.sh: line 123: kill: (119443) - No such process
+TERMINATE METRIC JOB - PID: 119444
+./jobdistributor.sh: line 132: 119444 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 119446
+./jobdistributor.sh: line 132: 119446 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 119448
+./jobdistributor.sh: line 132: 119448 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
