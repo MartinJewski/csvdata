@@ -1,0 +1,74 @@
+---------------------------------
+---------------------------------
+Node_LIST: node27-010 node27-011 node27-012 node29-013
+-------------------iter:0------------------------
+monitoring start 0 PID: 25743
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-011
+monitoring start 1 PID: 25745
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node27-012
+monitoring start 2 PID: 25747
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node29-013
+monitoring start 3 PID: 25749
+--------------------------------------------------
+distribute from: node27-010
+main tool program PID: 25838
+MY MAIN_PID: 25838
+MY PID_LIST: 25743 25745 25747 25749
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Apr 16 09:30:28 2023
+Command line        : ior -a MPIIO -t 1000M -b 1000M -C -o /scratch/fuchs/aglippert/machajewskim/testoutput/testFile.out
+Machine             : Linux node27-010.cm.cluster
+TestID              : 0
+StartTime           : Sun Apr 16 09:30:28 2023
+Path                : /scratch/fuchs/aglippert/machajewskim/testoutput
+FS                  : 2415.8 TiB   Used FS: 19.8%   Inodes: 0.0 Mi   Used Inodes: -nan%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : /scratch/fuchs/aglippert/machajewskim/testoutput/testFile.out
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 4
+tasks               : 80
+clients per node    : 20
+repetitions         : 1
+xfersize            : 1000 MiB
+blocksize           : 1000 MiB
+aggregate filesize  : 78.12 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     760.31     0.905123   12.77       1024000    1024000    16.72      88.39      83.19      105.22     0   
+read      1066.42    1.16       46.42       1024000    1024000    5.71       69.11      25.20      75.02      0   
+remove    -          -          -           -          -          -          -          -          0.035888   0   
+Max Write: 760.31 MiB/sec (797.24 MB/sec)
+Max Read:  1066.42 MiB/sec (1118.22 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         760.31     760.31     760.31       0.00       0.76       0.76       0.76       0.00  105.22004         NA            NA     0     80  20    1   0     1        1         0    0      1 1048576000 1048576000   80000.0 MPIIO      0
+read         1066.42    1066.42    1066.42       0.00       1.07       1.07       1.07       0.00   75.01720         NA            NA     0     80  20    1   0     1        1         0    0      1 1048576000 1048576000   80000.0 MPIIO      0
+Finished            : Sun Apr 16 09:33:38 2023
+TERMINATE METRIC JOB - PID: 25743
+./jobdistributor.sh: line 125: kill: (25743) - No such process
+TERMINATE METRIC JOB - PID: 25745
+./jobdistributor.sh: line 134: 25745 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 25747
+./jobdistributor.sh: line 134: 25747 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 25749
+./jobdistributor.sh: line 134: 25749 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
+mv: cannot move ‘nodeout_monitoring_2023-04-16’ to a subdirectory of itself, ‘nodeout_monitoring_2023-04-16/nodeout_monitoring_2023-04-16’

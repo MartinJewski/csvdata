@@ -1,0 +1,72 @@
+---------------------------------
+---------------------------------
+Node_LIST: node25-015 node25-018 node26-005 node26-006
+-------------------iter:0------------------------
+monitoring start 0 PID: 30899
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node25-018
+monitoring start 1 PID: 30901
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node26-005
+monitoring start 2 PID: 30903
+--------------------------------------------------
+-------------------iter:3------------------------
+distribute from: node26-006
+monitoring start 3 PID: 30905
+--------------------------------------------------
+distribute from: node25-015
+main tool program PID: 30997
+MY MAIN_PID: 30997
+MY PID_LIST: 30899 30901 30903 30905
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sat Apr 15 23:31:25 2023
+Command line        : ior -a MPIIO -t 1000M -b 5000M -o /scratch/fuchs/aglippert/machajewskim/testoutput/testFile
+Machine             : Linux node25-015.cm.cluster
+TestID              : 0
+StartTime           : Sat Apr 15 23:31:25 2023
+Path                : /scratch/fuchs/aglippert/machajewskim/testoutput
+FS                  : 2415.8 TiB   Used FS: 19.7%   Inodes: 0.0 Mi   Used Inodes: -nan%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : /scratch/fuchs/aglippert/machajewskim/testoutput/testFile
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 4
+tasks               : 80
+clients per node    : 20
+repetitions         : 1
+xfersize            : 1000 MiB
+blocksize           : 4.88 GiB
+aggregate filesize  : 390.62 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     1748.94    1.75       31.76       5120000    1024000    0.788246   227.92     164.54     228.71     0   
+read      3990       3.99       17.17       5120000    1024000    0.061638   100.19     17.00      100.25     0   
+remove    -          -          -           -          -          -          -          -          0.001443   0   
+Max Write: 1748.94 MiB/sec (1833.89 MB/sec)
+Max Read:  3989.93 MiB/sec (4183.75 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1748.94    1748.94    1748.94       0.00       1.75       1.75       1.75       0.00  228.71054         NA            NA     0     80  20    1   0     0        1         0    0      1 5242880000 1048576000  400000.0 MPIIO      0
+read         3989.93    3989.93    3989.93       0.00       3.99       3.99       3.99       0.00  100.25228         NA            NA     0     80  20    1   0     0        1         0    0      1 5242880000 1048576000  400000.0 MPIIO      0
+Finished            : Sat Apr 15 23:36:55 2023
+TERMINATE METRIC JOB - PID: 30899
+./jobdistributor.sh: line 123: kill: (30899) - No such process
+TERMINATE METRIC JOB - PID: 30901
+./jobdistributor.sh: line 132: 30901 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 30903
+./jobdistributor.sh: line 132: 30903 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 30905
+./jobdistributor.sh: line 132: 30905 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n

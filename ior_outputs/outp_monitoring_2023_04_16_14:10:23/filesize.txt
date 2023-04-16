@@ -1,0 +1,4 @@
+
+
+[machajewskim@fuchs src]$ ls -lh testFile 
+-rw-r--r-- 1 machajewskim aglippert 8,8G 16. Apr 14:19 testFile

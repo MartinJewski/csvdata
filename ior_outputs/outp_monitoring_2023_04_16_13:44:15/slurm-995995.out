@@ -1,0 +1,69 @@
+---------------------------------
+---------------------------------
+Node_LIST: node27-010 node27-011 node27-012
+-------------------iter:0------------------------
+monitoring start 0 PID: 70559
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-011
+monitoring start 1 PID: 70561
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node27-012
+monitoring start 2 PID: 70563
+--------------------------------------------------
+distribute from: node27-010
+main tool program PID: 70644
+MY MAIN_PID: 70644
+MY PID_LIST: 70559 70561 70563
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Apr 16 13:44:36 2023
+Command line        : ior -a MPIIO -t 400M -b 800M -F -C -k -o /scratch/fuchs/aglippert/machajewskim/testoutput/testFile.out
+Machine             : Linux node27-010.cm.cluster
+TestID              : 0
+StartTime           : Sun Apr 16 13:44:36 2023
+Path                : /scratch/fuchs/aglippert/machajewskim/testoutput
+FS                  : 2415.8 TiB   Used FS: 19.8%   Inodes: 0.0 Mi   Used Inodes: -nan%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : /scratch/fuchs/aglippert/machajewskim/testoutput/testFile.out
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 3
+tasks               : 45
+clients per node    : 15
+repetitions         : 1
+xfersize            : 400 MiB
+blocksize           : 800 MiB
+aggregate filesize  : 35.16 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+write     3796       9.91       2.78        819200     409600     2.20       9.08       5.85       9.48       0   
+read      1873.19    4.73       4.42        819200     409600     1.95       19.01      11.20      19.22      0   
+Max Write: 3795.57 MiB/sec (3979.95 MB/sec)
+Max Read:  1873.19 MiB/sec (1964.18 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        3795.57    3795.57    3795.57       0.00       9.49       9.49       9.49       0.00    9.48473         NA            NA     0     45  15    1   1     1        1         0    0      1 838860800 419430400   36000.0 MPIIO      0
+read         1873.19    1873.19    1873.19       0.00       4.68       4.68       4.68       0.00   19.21855         NA            NA     0     45  15    1   1     1        1         0    0      1 838860800 419430400   36000.0 MPIIO      0
+Finished            : Sun Apr 16 13:45:05 2023
+ 
+ 
+WAIT FOR 60 seconds
+TERMINATE METRIC JOB - PID: 70559
+./jobdistributor.sh: line 129: kill: (70559) - No such process
+TERMINATE METRIC JOB - PID: 70561
+./jobdistributor.sh: line 138: 70561 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 70563
+./jobdistributor.sh: line 138: 70563 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n

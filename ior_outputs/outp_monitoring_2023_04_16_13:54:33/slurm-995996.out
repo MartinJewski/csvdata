@@ -1,0 +1,75 @@
+---------------------------------
+---------------------------------
+Node_LIST: node27-010 node27-011 node27-012
+-------------------iter:0------------------------
+monitoring start 0 PID: 72429
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-011
+monitoring start 1 PID: 72430
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node27-012
+monitoring start 2 PID: 72433
+--------------------------------------------------
+distribute from: node27-010
+main tool program PID: 72524
+MY MAIN_PID: 72524
+MY PID_LIST: 72429 72430 72433
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Apr 16 13:54:55 2023
+Command line        : ior -a MPIIO -t 400M -b 800M -F -C -k
+Machine             : Linux node27-010.cm.cluster
+TestID              : 0
+StartTime           : Sun Apr 16 13:54:55 2023
+Path                : /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
+FS                  : 36.2 TiB   Used FS: 10.7%   Inodes: 581.9 Mi   Used Inodes: 7.3%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : testFile
+access              : file-per-process
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 3
+tasks               : 45
+clients per node    : 15
+repetitions         : 1
+xfersize            : 400 MiB
+blocksize           : 800 MiB
+aggregate filesize  : 35.16 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 37748736000.
+WARNING: Stat() of aggregate file size      = 27236716544.
+WARNING: Using actual aggregate bytes moved = 37748736000.
+write     137.05     0.342645   125.00      819200     409600     52.40      262.66     63.75      262.67     0   
+WARNING: Expected aggregate file size       = 37748736000.
+WARNING: Stat() of aggregate file size      = 27236716544.
+WARNING: Using actual aggregate bytes moved = 37748736000.
+read      292.28     0.731379   55.83       819200     409600     73.24      123.06     103.35     123.17     0   
+Max Write: 137.05 MiB/sec (143.71 MB/sec)
+Max Read:  292.28 MiB/sec (306.48 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write         137.05     137.05     137.05       0.00       0.34       0.34       0.34       0.00  262.67419         NA            NA     0     45  15    1   1     1        1         0    0      1 838860800 419430400   36000.0 MPIIO      0
+read          292.28     292.28     292.28       0.00       0.73       0.73       0.73       0.00  123.16896         NA            NA     0     45  15    1   1     1        1         0    0      1 838860800 419430400   36000.0 MPIIO      0
+Finished            : Sun Apr 16 14:01:21 2023
+ 
+ 
+WAIT FOR 60 seconds
+TERMINATE METRIC JOB - PID: 72429
+./jobdistributor.sh: line 129: kill: (72429) - No such process
+TERMINATE METRIC JOB - PID: 72430
+./jobdistributor.sh: line 138: 72430 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 72433
+./jobdistributor.sh: line 138: 72433 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n

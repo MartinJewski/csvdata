@@ -1,0 +1,99 @@
+---------------------------------
+---------------------------------
+Node_LIST: node27-010 node27-011 node27-012
+-------------------iter:0------------------------
+monitoring start 0 PID: 39377
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-011
+monitoring start 1 PID: 39378
+--------------------------------------------------
+-------------------iter:2------------------------
+distribute from: node27-012
+monitoring start 2 PID: 39381
+--------------------------------------------------
+distribute from: node27-010
+main tool program PID: 39459
+MY MAIN_PID: 39459
+MY PID_LIST: 39377 39378 39381
+IOR-3.3.0: MPI Coordinated Test of Parallel I/O
+Began               : Sun Apr 16 10:44:07 2023
+Command line        : ior -a MPIIO -t 100M -b 1000M -o /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src/testFile.out
+Machine             : Linux node27-010.cm.cluster
+TestID              : 0
+StartTime           : Sun Apr 16 10:44:07 2023
+Path                : /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
+FS                  : 36.2 TiB   Used FS: 10.7%   Inodes: 581.9 Mi   Used Inodes: 7.3%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.1)
+test filename       : /home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src/testFile.out
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : no tasks offsets
+nodes               : 3
+tasks               : 44
+clients per node    : 15
+repetitions         : 1
+xfersize            : 100 MiB
+blocksize           : 1000 MiB
+aggregate filesize  : 42.97 GiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+mca_fbtl_posix_pwritev: error in (p)write(v):Disk quota exceeded
+WARNING: Expected aggregate file size       = 46137344000.
+WARNING: Stat() of aggregate file size      = 45088768000.
+WARNING: Using actual aggregate bytes moved = 46137344000.
+write     44.13      0.441485   16.05       1024000    102400     0.448692   996.64     940.31     997.09     0   
+WARNING: Expected aggregate file size       = 46137344000.
+WARNING: Stat() of aggregate file size      = 45088768000.
+WARNING: Using actual aggregate bytes moved = 46137344000.
+read      172.65     1.73       24.30       1024000    102400     0.119579   254.73     253.15     254.85     0   
+remove    -          -          -           -          -          -          -          -          6.40       0   
+Max Write: 44.13 MiB/sec (46.27 MB/sec)
+Max Read:  172.65 MiB/sec (181.04 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write          44.13      44.13      44.13       0.00       0.44       0.44       0.44       0.00  997.08650         NA            NA     0     44  15    1   0     0        1         0    0      1 1048576000 104857600   44000.0 MPIIO      0
+read          172.65     172.65     172.65       0.00       1.73       1.73       1.73       0.00  254.85117         NA            NA     0     44  15    1   0     0        1         0    0      1 1048576000 104857600   44000.0 MPIIO      0
+Finished            : Sun Apr 16 11:05:05 2023
+TERMINATE METRIC JOB - PID: 39377
+./jobdistributor.sh: line 126: kill: (39377) - No such process
+TERMINATE METRIC JOB - PID: 39378
+./jobdistributor.sh: line 135: 39378 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+TERMINATE METRIC JOB - PID: 39381
+./jobdistributor.sh: line 135: 39381 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
+mv: cannot move ‘slurm-995936.out’ to ‘outp_monitoring_2023_04_16_10:43:46/slurm-995936.out’: Device or resource busy
