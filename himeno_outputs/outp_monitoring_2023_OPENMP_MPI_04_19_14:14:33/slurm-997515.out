@@ -1,0 +1,75 @@
+---------------------------------
+---------------------------------
+Node_LIST: node26-019 node27-004
+-------------------iter:0------------------------
+monitoring start 0 PID: 80976
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-004
+monitoring start 1 PID: 80977
+--------------------------------------------------
+distribute from: node26-019
+main tool program PID: 81044
+MY MAIN_PID: 81044
+MY PID_LIST: 80976 80977
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+World grid dimensions are: 45x45x67
+Gird dimension per process: 16x16x24
+
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Running on 36 OpenMP threads
+Floating Point Operations: 4.08629e+06
+MFLOPS: 135.461 time(s): 0.0904971 gosa: 0.00330968
+
+Now start the actual measurement process.
+The loop will be executed 1989 times.
+This will take about 60 seconds.
+Wait for a while 
+
+cpu: 9.15785 sec.
+Loop executed for 1989 times
+Gosa: 1.95688e-09
+MFLOPS measured: 887.504
+ 
+ 
+WAIT FOR 15 seconds
+TERMINATE METRIC JOB - PID: 80976
+./jobdistributor.sh: line 129: kill: (80976) - No such process
+TERMINATE METRIC JOB - PID: 80977
+./jobdistributor.sh: line 138: 80977 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n

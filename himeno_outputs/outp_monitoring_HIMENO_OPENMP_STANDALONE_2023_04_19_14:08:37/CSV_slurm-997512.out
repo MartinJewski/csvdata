@@ -1,0 +1,17 @@
+---------------------------------
+---------------------------------
+Node_LIST:,node26-019,node27-004
+-------------------iter:0------------------------
+monitoring,start,0,PID:,79156
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute,from:,node27-004
+monitoring,start,1,PID:,79157
+--------------------------------------------------
+distribute,from:,node26-019
+main,tool,program,PID:,79215
+0,0,79215
+0,PID_LIST:,79156,79157
+Start,rehearsal,measurement,process.
+0,the,performance,in,3,times.
+0,dimensions,are:,128x128x256

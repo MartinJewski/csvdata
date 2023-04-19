@@ -1,0 +1,1 @@
+-rw-r--r--,1,machajewskim,aglippert,15G,16.,Apr,14:34,testFile.out

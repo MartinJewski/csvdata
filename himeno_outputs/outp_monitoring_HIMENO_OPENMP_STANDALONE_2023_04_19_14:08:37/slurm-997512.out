@@ -1,0 +1,634 @@
+---------------------------------
+---------------------------------
+Node_LIST: node26-019 node27-004
+-------------------iter:0------------------------
+monitoring start 0 PID: 79156
+--------------------------------------------------
+-------------------iter:1------------------------
+distribute from: node27-004
+monitoring start 1 PID: 79157
+--------------------------------------------------
+distribute from: node26-019
+main tool program PID: 79215
+MY MAIN_PID: 79215
+MY PID_LIST: 79156 79157
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Start rehearsal measurement process.
+Measure the performance in 3 times.
+Grid dimensions are: 128x128x256
+
+Running on 36 OpenMP threads
+Floating Point Operations: 1.37105e+08
+MFLOPS: 1098.25 time(s): 0.37452 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 480 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 918.81 time(s): 0.447661 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 402 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 786.171 time(s): 0.523188 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 344 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 766.401 time(s): 0.536684 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 335 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 850.208 time(s): 0.483782 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 372 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 782.948 time(s): 0.525342 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 342 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 779.682 time(s): 0.527543 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 341 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 778.936 time(s): 0.528048 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 340 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 711.775 time(s): 0.577873 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 311 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 735.149 time(s): 0.5595 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 321 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+Floating Point Operations: 1.37105e+08
+MFLOPS: 756.4 time(s): 0.54378 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 331 times.
+This will take about 60 seconds.
+Wait for a while 
+
+MFLOPS: 813.211 time(s): 0.505792 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 355 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 728.154 time(s): 0.564875 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 318 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 710.847 time(s): 0.578628 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 311 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 719.582 time(s): 0.571603 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 314 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 717.507 time(s): 0.573256 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 313 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 812.534 time(s): 0.506213 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 355 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 802.273 time(s): 0.512687 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 351 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 725.936 time(s): 0.5666 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 317 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 780.487 time(s): 0.526998 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 341 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 685.457 time(s): 0.60006 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 299 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 740.985 time(s): 0.555093 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 324 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 655.443 time(s): 0.627538 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 286 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 707.483 time(s): 0.581378 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 309 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 727.614 time(s): 0.565293 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 318 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 696.176 time(s): 0.590821 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 304 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 622.786 time(s): 0.660444 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 272 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 763.832 time(s): 0.53849 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 334 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 754.213 time(s): 0.545357 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 330 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 759.504 time(s): 0.541558 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 332 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 697.702 time(s): 0.589529 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 305 times.
+This will take about 60 seconds.
+Floating Point Operations: 1.37105e+08
+MFLOPS: 708.232 time(s): 0.580763 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 309 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 747.147 time(s): 0.550515 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 326 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 675.384 time(s): 0.60901 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 295 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Floating Point Operations: 1.37105e+08
+MFLOPS: 680.168 time(s): 0.604726 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 297 times.
+This will take about 60 seconds.
+Floating Point Operations: 1.37105e+08
+MFLOPS: 610.404 time(s): 0.673841 gosa: 0.00169314
+
+Now start the actual measurement process.
+The loop will be executed 267 times.
+This will take about 60 seconds.
+Wait for a while 
+
+Wait for a while 
+
+cpu: 51.624 sec.
+Loop executed for 267 times
+Gosa: 0.00117267
+MFLOPS measured: 709.11
+cpu: 51.7672 sec.
+Loop executed for 272 times
+Gosa: 0.00116807
+MFLOPS measured: 720.39
+cpu: 54.6825 sec.
+Loop executed for 286 times
+Gosa: 0.00115516
+MFLOPS measured: 717.086
+cpu: 56.0315 sec.
+Loop executed for 297 times
+Gosa: 0.0011453
+MFLOPS measured: 726.738
+cpu: 56.6752 sec.
+Loop executed for 295 times
+Gosa: 0.00114732
+MFLOPS measured: 713.646
+cpu: 57.2516 sec.
+Loop executed for 299 times
+Gosa: 0.00114366
+MFLOPS measured: 716.04
+cpu: 57.7229 sec.
+Loop executed for 305 times
+Gosa: 0.00113825
+MFLOPS measured: 724.445
+cpu: 58.128 sec.
+Loop executed for 313 times
+Gosa: 0.00113146
+MFLOPS measured: 738.265
+cpu: 58.1755 sec.
+Loop executed for 309 times
+Gosa: 0.0011348
+MFLOPS measured: 728.236
+cpu: 58.9831 sec.
+Loop executed for 304 times
+Gosa: 0.00113925
+MFLOPS measured: 706.643
+cpu: 59.2028 sec.
+Loop executed for 311 times
+Gosa: 0.0011332
+MFLOPS measured: 720.231
+cpu: 59.7715 sec.
+Loop executed for 311 times
+Gosa: 0.0011332
+MFLOPS measured: 713.378
+cpu: 59.8302 sec.
+Loop executed for 321 times
+Gosa: 0.00112452
+MFLOPS measured: 735.594
+cpu: 59.8458 sec.
+Loop executed for 324 times
+Gosa: 0.00112195
+MFLOPS measured: 742.275
+cpu: 60.1577 sec.
+Loop executed for 309 times
+Gosa: 0.0011348
+MFLOPS measured: 704.24
+cpu: 60.4472 sec.
+Loop executed for 340 times
+Gosa: 0.00110892
+MFLOPS measured: 771.182
+cpu: 60.5134 sec.
+Loop executed for 317 times
+Gosa: 0.00112789
+MFLOPS measured: 718.227
+cpu: 60.4775 sec.
+Loop executed for 334 times
+Gosa: 0.0011138
+MFLOPS measured: 757.193
+cpu: 60.5732 sec.
+Loop executed for 341 times
+Gosa: 0.0011082
+MFLOPS measured: 771.84
+cpu: 60.6735 sec.
+Loop executed for 314 times
+Gosa: 0.00113069
+MFLOPS measured: 709.552
+cpu: 60.8291 sec.
+Loop executed for 318 times
+Gosa: 0.00112696
+MFLOPS measured: 716.753
+cpu: 61.0895 sec.
+Loop executed for 342 times
+Gosa: 0.00110745
+MFLOPS measured: 767.561
+cpu: 61.399 sec.
+Loop executed for 318 times
+Gosa: 0.00112696
+MFLOPS measured: 710.1
+cpu: 61.7064 sec.
+Loop executed for 355 times
+Gosa: 0.00109697
+MFLOPS measured: 788.773
+cpu: 61.5511 sec.
+Loop executed for 332 times
+Gosa: 0.00111536
+MFLOPS measured: 739.531
+cpu: 61.892 sec.
+Loop executed for 331 times
+Gosa: 0.00111631
+MFLOPS measured: 733.242
+cpu: 62.2138 sec.
+Loop executed for 330 times
+Gosa: 0.00111707
+MFLOPS measured: 727.245
+cpu: 62.6553 sec.
+Loop executed for 344 times
+Gosa: 0.00110562
+MFLOPS measured: 752.756
+cpu: 62.4428 sec.
+Loop executed for 326 times
+Gosa: 0.00112048
+MFLOPS measured: 715.795
+cpu: 62.7986 sec.
+Loop executed for 335 times
+Gosa: 0.00111295
+MFLOPS measured: 731.389
+cpu: 63.0791 sec.
+Loop executed for 402 times
+Gosa: 0.00106125
+MFLOPS measured: 873.765
+cpu: 63.1773 sec.
+Loop executed for 341 times
+Gosa: 0.0011082
+MFLOPS measured: 740.026
+cpu: 63.1617 sec.
+Loop executed for 355 times
+Gosa: 0.00109697
+MFLOPS measured: 770.599
+cpu: 63.1951 sec.
+Loop executed for 351 times
+Gosa: 0.00110013
+MFLOPS measured: 761.513
+cpu: 63.7335 sec.
+Loop executed for 372 times
+Gosa: 0.00108373
+MFLOPS measured: 800.256
+cpu: 64.6738 sec.
+Loop executed for 480 times
+Gosa: 0.00100802
+MFLOPS measured: 1017.58
+ 
+ 
+WAIT FOR 15 seconds
+TERMINATE METRIC JOB - PID: 79156
+./jobdistributor.sh: line 129: kill: (79156) - No such process
+TERMINATE METRIC JOB - PID: 79157
+./jobdistributor.sh: line 138: 79157 Killed                  mpirun --oversubscribe -npernode 1 -H ${NODE_LIST[$i]} python3 $(pwd)/gstart.py "$2" >> workermon${NODE_LIST[$i]}.txt
+\n
