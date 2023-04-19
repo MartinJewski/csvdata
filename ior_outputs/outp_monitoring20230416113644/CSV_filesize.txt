@@ -1,0 +1,2 @@
+-rw-r--r--,,1,machajewskim,aglippert,12G,16.,Apr,11:37,testFile.out
+-rw-r--r--,1,machajewskim,aglippert,8,16.,Apr,11:29,testFile.out-189333505-46874.lock

@@ -20,11 +20,11 @@ distribute,from:,node28-001
 main,tool,program,PID:,60464
 0,0,60464
 0,PID_LIST:,60367,60369,60371,60373
-IOR-3.3.0:,0,Coordinated,Test,of,Parallel,I/O
+0,0,Coordinated,Test,of,Parallel,I/O
 0,,:,Fri,Apr,14,15:36:50,2023
 Command,line,:,ior,-a,0,-t,500000000,-b,1000000000,-F,-o,/scratch/fuchs/aglippert/machajewskim/testoutput
-0,,:,Linux,node28-001.cm.cluster
+0,,:,Linux,0
 TestID,,:,0
 StartTime,,:,Fri,Apr,14,15:36:50,2023
 Path,,:,/scratch/fuchs/aglippert/machajewskim
-FS,,:,2415.8,0,Used,FS:,19.6%,Inodes:,0.0,0,Used,Inodes:,-nan%
+FS,,:,2416,0,Used,FS:,0,Inodes:,0,0,Used,Inodes:,-nan%

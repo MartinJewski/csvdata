@@ -16,11 +16,11 @@ distribute,from:,node27-010
 main,tool,program,PID:,79018
 0,0,79018
 0,PID_LIST:,78933,78935,78937
-IOR-3.3.0:,0,Coordinated,Test,of,Parallel,I/O
+0,0,Coordinated,Test,of,Parallel,I/O
 0,,:,Sun,Apr,16,14:33:45,2023
-Command,line,:,ior,-a,0,-t,1000000000,-b,1000000000,-k,-o,/scratch/fuchs/aglippert/machajewskim/testoutput/testFile.out
-0,,:,Linux,node27-010.cm.cluster
+Command,line,:,ior,-a,0,-t,1000000000,-b,1000000000,-k,-o,0
+0,,:,Linux,0
 TestID,,:,0
 StartTime,,:,Sun,Apr,16,14:33:45,2023
 Path,,:,/scratch/fuchs/aglippert/machajewskim/testoutput
-FS,,:,2415.8,0,Used,FS:,19.8%,Inodes:,0.0,0,Used,Inodes:,-nan%
+FS,,:,2416,0,Used,FS:,0,Inodes:,0,0,Used,Inodes:,-nan%

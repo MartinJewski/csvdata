@@ -20,11 +20,11 @@ distribute,from:,node24-014
 main,tool,program,PID:,119539
 0,0,119539
 0,PID_LIST:,119443,119444,119446,119448
-IOR-3.3.0:,0,Coordinated,Test,of,Parallel,I/O
+0,0,Coordinated,Test,of,Parallel,I/O
 0,,:,Fri,Apr,14,05:42:41,2023
 Command,line,:,ior,-a,0,-t,500000000,-b,1000000000,-F
-0,,:,Linux,node24-014.cm.cluster
+0,,:,Linux,0
 TestID,,:,0
 StartTime,,:,Fri,Apr,14,05:42:41,2023
 Path,,:,/home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
-FS,,:,36.2,0,Used,FS:,10.7%,Inodes:,581.9,0,Used,Inodes:,7.3%
+FS,,:,36,0,Used,FS:,0,Inodes:,582,0,Used,Inodes:,0

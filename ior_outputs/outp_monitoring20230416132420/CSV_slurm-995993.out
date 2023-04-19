@@ -16,11 +16,11 @@ distribute,from:,node27-010
 main,tool,program,PID:,67080
 0,0,67080
 0,PID_LIST:,66984,66986,66988
-IOR-3.3.0:,0,Coordinated,Test,of,Parallel,I/O
+0,0,Coordinated,Test,of,Parallel,I/O
 0,,:,Sun,Apr,16,13:24:40,2023
 Command,line,:,ior,-a,0,-t,300000000,-b,300000000,-F,-C,-k
-0,,:,Linux,node27-010.cm.cluster
+0,,:,Linux,0
 TestID,,:,0
 StartTime,,:,Sun,Apr,16,13:24:40,2023
 Path,,:,/home/fuchs/aglippert/machajewskim/development/node-level-resource-monitoring/src
-FS,,:,36.2,0,Used,FS:,10.7%,Inodes:,581.9,0,Used,Inodes:,7.3%
+FS,,:,36,0,Used,FS:,0,Inodes:,582,0,Used,Inodes:,0
