@@ -35,11 +35,11 @@ def convertUnit(num, unit):
             parsedValue = int(num) * pow(10, 9) #giga
         elif isFloat(num):
             parsedValue = float(num) * pow(10, 9) #giga
-    elif unit == "NONE":
+    else:
         if isInt(num):
-            parsedValue = int(num)
+            parsedValue = int(num) #giga
         elif isFloat(num):
-            parsedValue = int(round(float(num)))
+            parsedValue = round(float(num)) #giga
 
     return parsedValue
     
@@ -53,13 +53,16 @@ def monitoringLineConvert(stringVal: str):
     for ele in range(stringList.__len__()):
         for i in units:
             if stringList[ele].__contains__(i):
-                print(stringList[ele], i)                
-                print(convertUnit(stringList[ele].replace(i, ""), i))
+                print("1", ele)
+                print("2", stringList[ele], i)                
+                print("3", convertUnit(stringList[ele].replace(i, ""), i))
                 stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), i))
-            else:
-                print(stringList[ele], i)                
-                print(convertUnit(stringList[ele].replace(i, ""), "NONE"))
-                stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), "NONE"))
+            if stringList[ele].__contains__("."):
+                print("1", ele)
+                print("2", stringList[ele], i)                
+                print("3", convertUnit(stringList[ele], "NONE"))
+                stringList[ele] = str(convertUnit(stringList[ele], "NONE"))
+
 
 
     for ele in range(stringList.__len__()):
@@ -74,8 +77,8 @@ def monitoringLineConvert(stringVal: str):
 
 
 
-mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,13B,63B,2619M,41.231G,81.5G,123G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
+#mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,13B,63B,2619M,41.231G,81.5G,123G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
 
-monitoringLineConvert(mystring)
+#monitoringLineConvert(mystring)
 
 #convert_to_byte(mystring)
