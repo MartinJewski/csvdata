@@ -1,6 +1,0 @@
-[machajewskim@fuchs testoutput]$ ls -lh *
--rw-r--r-- 1 machajewskim aglippert 79G 16. Apr 10:13 testFile.out
-[machajewskim@fuchs testoutput]$ 
-
-
-
