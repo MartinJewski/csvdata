@@ -19,22 +19,22 @@ def convertUnit(num, unit):
         if isInt(num):
             parsedValue = int(num) * 8 #giga
         elif isFloat(num):
-            parsedValue = float(num) * 8 #giga
+            parsedValue = round(float(num) * 8) #giga
     elif unit == "K":
         if isInt(num):
             parsedValue = int(num) * pow(10, 3) #kilo
         elif isFloat(num):
-            parsedValue = float(num) * pow(10, 3) #kilo
+            parsedValue = round(float(num) * pow(10, 3)) #kilo
     elif unit == "M":
         if isInt(num):
             parsedValue = int(num) * pow(10, 6) #mega
         elif isFloat(num):
-            parsedValue = float(num) * pow(10, 6) #mega
+            parsedValue = round(float(num) * pow(10, 6)) #mega
     elif unit == "G":
         if isInt(num):
             parsedValue = int(num) * pow(10, 9) #giga
         elif isFloat(num):
-            parsedValue = float(num) * pow(10, 9) #giga
+            parsedValue = round(float(num) * pow(10, 9)) #giga
     else:
         if isInt(num):
             parsedValue = int(num) #giga
@@ -77,8 +77,8 @@ def monitoringLineConvert(stringVal: str):
 
 
 
-#mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,13B,63B,2619M,41.231G,81.5G,123G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
+mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,13B,63B,26.96G,41.231G,81.5G,123G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
 
-#monitoringLineConvert(mystring)
+monitoringLineConvert(mystring)
 
 #convert_to_byte(mystring)
