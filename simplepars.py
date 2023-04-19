@@ -51,7 +51,6 @@ for filename in os.listdir(directory):
 
     newCSV = open(newFilePath, "w+")
 
-
     if os.path.isfile(filePath):
         print(filePath)
         print(newFilePath)

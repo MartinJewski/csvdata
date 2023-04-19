@@ -35,13 +35,19 @@ def convertUnit(num, unit):
             parsedValue = int(num) * pow(10, 9) #giga
         elif isFloat(num):
             parsedValue = float(num) * pow(10, 9) #giga
+    elif unit == "NONE":
+        if isInt(num):
+            parsedValue = int(num)
+        elif isFloat(num):
+            parsedValue = int(round(float(num)))
+
     return parsedValue
     
 
 def monitoringLineConvert(stringVal: str):
     #csvFile = open(filePath, "w+")
     stringList = stringVal.split(",")
-    units = ["B", "K", "M", "G"]
+    units = ["B", "K", "M", "G", "NONE"]
     finalString = ""
     
     for ele in range(stringList.__len__()):
@@ -50,6 +56,11 @@ def monitoringLineConvert(stringVal: str):
                 print(stringList[ele], i)                
                 print(convertUnit(stringList[ele].replace(i, ""), i))
                 stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), i))
+            else:
+                print(stringList[ele], i)                
+                print(convertUnit(stringList[ele].replace(i, ""), "NONE"))
+                stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), "NONE"))
+
 
     for ele in range(stringList.__len__()):
         if ele == stringList.__len__()-1:
