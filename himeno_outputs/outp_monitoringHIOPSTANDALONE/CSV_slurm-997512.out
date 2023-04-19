@@ -12,6 +12,6 @@ distribute,from:,node26-019
 main,tool,program,PID:,79215
 0,0,79215
 0,PID_LIST:,79156,79157
-Start,rehearsal,measurement,process.
-0,the,performance,in,3,times.
+Start,rehearsal,measurement,0
+0,the,performance,in,3,0
 0,dimensions,are:,128x128x256

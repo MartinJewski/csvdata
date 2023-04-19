@@ -12,7 +12,7 @@ distribute,from:,node26-019
 main,tool,program,PID:,81044
 0,0,81044
 0,PID_LIST:,80976,80977
-Start,rehearsal,measurement,process.
-0,the,performance,in,3,times.
+Start,rehearsal,measurement,0
+0,the,performance,in,3,0
 World,grid,dimensions,are:,45x45x67
 0,dimension,per,process:,16x16x24

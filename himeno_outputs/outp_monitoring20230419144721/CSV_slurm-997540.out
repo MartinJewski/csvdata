@@ -24,7 +24,7 @@ distribute,from:,node27-004
 main,tool,program,PID:,32716
 0,0,32716
 0,PID_LIST:,32617,32618,32621,32623,32625
-Start,rehearsal,measurement,process.
-0,the,performance,in,3,times.
+Start,rehearsal,measurement,0
+0,the,performance,in,3,0
 World,grid,dimensions,are:,35x35x67
 0,dimension,per,process:,10x10x18
