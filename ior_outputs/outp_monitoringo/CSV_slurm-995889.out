@@ -20,10 +20,10 @@ distribute,from:,node25-015
 main,tool,program,PID:,30997
 0,0,30997
 0,PID_LIST:,30899,30901,30903,30905
-0,0,Coordinated,Test,of,Parallel,I/O
+IOR-3.3.0:,0,Coordinated,Test,of,Parallel,I/O
 0,,:,Sat,Apr,15,23:31:25,2023
 Command,line,:,ior,-a,0,-t,1000000000,-b,5000000000,-o,/scratch/fuchs/aglippert/machajewskim/testoutput/testFile
-0,,:,Linux,0
+0,,:,Linux,node25-015.cm.cluster
 TestID,,:,0
 StartTime,,:,Sat,Apr,15,23:31:25,2023
 Path,,:,/scratch/fuchs/aglippert/machajewskim/testoutput

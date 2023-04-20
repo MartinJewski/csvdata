@@ -12,6 +12,16 @@ def isFloat(num):
         return True
     except ValueError:
         return False
+    
+def unitInString(unitList, String):
+    contains = False
+    for unit in unitList:
+        if unit in String:
+            contains = True
+            break
+    return contains
+
+    
 
 def convertUnit(num, unit):
     parsedValue = 0
@@ -46,22 +56,46 @@ def convertUnit(num, unit):
 
 def monitoringLineConvert(stringVal: str):
     #csvFile = open(filePath, "w+")
-    stringList = stringVal.split(",")
+    stringList = str(stringVal).split(",")
+    print("PREPARE: ", stringList)
     units = ["B", "K", "M", "G", "NONE"]
     finalString = ""
     
     for ele in range(stringList.__len__()):
         for i in units:
-            if stringList[ele].__contains__(i):
-                print("1", ele)
-                print("2", stringList[ele], i)                
-                print("3", convertUnit(stringList[ele].replace(i, ""), i))
+            if stringList[ele].find(i) != -1 and stringList[ele].find(".") == -1:
+                #print("---------")
+                #print("01", i)
+                #print("11", ele)
+                #print("21", stringList[ele], i)                
+                #print("31", convertUnit(stringList[ele].replace(i, ""), i))
+                #print("41", stringList[ele].replace(i, ""))
+                #print("51", isFloat(stringList[ele].replace(i, "")))
                 stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), i))
-            if stringList[ele].__contains__("."):
-                print("1", ele)
-                print("2", stringList[ele], i)                
-                print("3", convertUnit(stringList[ele], "NONE"))
+                #print("---------")
+
+            if stringList[ele].find(i) != -1 and unitInString(units, stringList[ele]) and (stringList[ele].count('.') == 1):
+                #print("---------")
+               #print("02", i)
+               # rint("12", ele)
+               #print("22", stringList[ele], i)                
+               #print("32", convertUnit(stringList[ele].replace(i, ""), i))
+                #print("42", stringList[ele].replace(i, ""))
+                #print("52", isFloat(stringList[ele].replace(i, "")))
+                stringList[ele] = str(convertUnit(stringList[ele].replace(i, ""), i))
+                #print("---------")
+
+            if not unitInString(units, stringList[ele]) and (stringList[ele].count('.') == 1):
+                #print("---------")
+                #print("03", "NONE")
+                #print("13", ele)
+                #print("23", stringList[ele], "<<< POINT")                
+                #rint("33", convertUnit(stringList[ele], "NONE"))
+                #print("44", stringList[ele].replace(i, ""))
+                #print("43", isFloat(stringList[ele].replace(i, "")))
+                #print("---------")
                 stringList[ele] = str(convertUnit(stringList[ele], "NONE"))
+
 
 
 
@@ -77,8 +111,12 @@ def monitoringLineConvert(stringVal: str):
 
 
 
-mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,13B,63B,26.96G,41.231G,81.5G,123G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
+#mystring = "l:2,45,1,54,0,0,1419K,3263K,0,0,0,0,1.3B,6.3B,26.96G,41.231G,81.5G,12.3G,5108,3943,0,0,5.6,0.08,0.09,0.09,Apr-07,14:18:32,node24-012.cm.cluster,07-04-2023,14:18:32"
 
-monitoringLineConvert(mystring)
+print(unitInString(["G"], "19.1G"))
+
+#print("3.0.0".count('.'))
+
+#monitoringLineConvert(mystring)
 
 #convert_to_byte(mystring)

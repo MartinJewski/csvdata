@@ -32,9 +32,13 @@ def parse(filePath, fileObj):
             
         
         if counter > 1:
+            print("----------------------")
+            print(line)
             newLine = line.replace(" ", ",").replace("┊",",").replace("│", ",").replace(",,,", ",").replace(",,", ",").replace("│,", ",").replace(",;", ",").replace(",,", ",")
+            print(newLine)
+            print("----------------------")
             newLine = replacer.monitoringLineConvert(newLine) + "\n"
-            print(newLine, end=" ")
+            print("NEW LINE: ", newLine, end=" ")
             fileObj.write(newLine)
             counter += 1
             continue
